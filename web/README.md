@@ -316,7 +316,7 @@ router.get('/halo', async (ctx) => {
 
 ### lib/services/demoService.spec.js
 
-> 测试文件保持和元文件同一个目录，命名为`源文件.spec.js`
+> 测试文件保持和源文件同一个目录，命名为`源文件.spec.js`
 
 ```javascript
 const makeDemoService = require('./demoService');
