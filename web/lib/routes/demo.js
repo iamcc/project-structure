@@ -6,6 +6,7 @@ const router = new Router();
 router.use(middlewares.responseHandler);
 
 router.get('/halo', async (ctx) => {
+  /** @type {Services.DemoService} */
   const { demoService } = ctx.scope.cradle;
 
   ctx.body = await demoService.halo(ctx.request.query);
@@ -20,5 +21,7 @@ router.get('/baidu', async (ctx) => {
 router.get('/error', (ctx) => {
   ctx.throw(403, 'forbidden');
 });
+
+router.name = '/demo';
 
 module.exports = router;

@@ -13,7 +13,7 @@ container.register({
 });
 
 container.loadModules([
-  [`${__dirname}/services/*(!(*.spec.js))`, Lifetime.SCOPED],
+  [`${__dirname}/services/*(!(*.spec.js|*.ts))`, Lifetime.SCOPED],
 ]);
 
 module.exports = container;
