@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "awilix": "^4.2.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bunyan": "^1.8.12",
     "dotenv": "^8.2.0",
     "glob": "^7.1.6",
